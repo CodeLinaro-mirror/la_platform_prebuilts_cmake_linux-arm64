@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<manifest>
+  <remote name="aosp" fetch="https://android.googlesource.com/" review="https://android.googlesource.com/" />
+  <remote name="aospsuperproject" fetch="https://android.googlesource.com/" review="https://android.googlesource.com/" revision="ndk-kokoro-main" />
+  <default revision="master" remote="aosp" sync-j="4" />
+  <superproject name="platform/superproject" remote="aospsuperproject" />
+  <project path="external/android-cmake" name="platform/external/android-cmake" revision="4d84ac860b03594dcf5b5a2544169c7609b82cc3" />
+  <project path="external/cmake" name="platform/external/cmake" revision="9e3c8260ff8d9d31a7202c080dd9c9a716d7f5a8" />
+  <project path="prebuilts/build-tools" name="platform/prebuilts/build-tools" revision="9c95027ed2ce2e97a35d597ed1012a6aecb80763" />
+  <project path="prebuilts/clang/host/linux-arm64" name="platform/prebuilts/clang/host/linux-arm64" revision="198cef08637a6133e98b4a80e36f0ca35775fa9a" />
+  <project path="prebuilts/cmake/linux-arm64" name="platform/prebuilts/cmake/linux-arm64" revision="5dee08b343f84461df7bb7e00f3350b67af4cab0" />
+  <project path="prebuilts/ninja/linux-arm64" name="platform/prebuilts/ninja/linux-arm64" revision="99db7d37ce75c18bbcc5f4f070fb799947c621c3" />
+  <project path="prebuilts/python/linux-arm64" name="platform/prebuilts/python/linux-arm64" revision="e771c72074e9b17b6ccf15f8eee2755cac20dc27" />
+  <project path="toolchain/ndk-kokoro" name="toolchain/ndk-kokoro" revision="f71eb25ea79c56f54b3cdc0f319ac2e7f0efaf1b" />
+  <project path="tools/ndkports" name="platform/tools/ndkports" revision="2e149f73a8e792fff6dc6aadc18d0d919a071282" />
+</manifest>
